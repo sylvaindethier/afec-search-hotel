@@ -27,19 +27,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  gap: var(--card-gap);
 }
 
 .card {
   display: block;
   width: 10rem;
   width: var(--card_width);
-  margin: 0.5rem;
-  margin: var(--card_margin-h);
-}
-/* reset .card horizontal margin */
-.card-container {
-  margin: auto -0.5rem;
-  margin: auto calc(-1 * var(--card_margin-h));
 }
 
 /********** IMAGE **********/
