@@ -1,0 +1,49 @@
+/*/ .container /*/
+.container {
+  border: 1px dotted red;
+}
+
+.container::before {
+  content: ".container";
+  display: block;
+  font-size: 0.75rem;
+  color: darkred;
+}
+@media (min-width: 480px) {
+  .container::before {
+    content: "@media (min-width: 480px { .container }";
+  }
+}
+@media (min-width: 576px) {
+  .container::before {
+    content: "@media (min-width: 576px { .container }";
+  }
+}
+@media (min-width: 720px) {
+  .container::before {
+    content: "@media (min-width: 720px { .container }";
+  }
+}
+@media (min-width: 1024px) {
+  .container::before {
+    content: "@media (min-width: 1024px { .container }";
+  }
+}
+@media (min-width: 1280px) {
+  .container::before {
+    content: "@media (min-width: 1280px { .container }";
+  }
+}
+/*// .container //*/
+
+/*/ .card /*/
+.card {
+  border: 1px solid red;
+}
+/*// .card //*/
+
+/*/ .card--content /*/
+.card--content {
+  border: 1px dotted blue;
+}
+/*// .card--content //*/

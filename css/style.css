@@ -1,0 +1,29 @@
+.container {
+  border-radius: 0.5rem;
+  background-color: #f2f2f2;
+  background-color: hsl(0, 0%, 90%);
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 0.125rem 0.25rem 0.125rem hsl(0, 0%, 20%, 0.2);
+  border: var(--card_border-width) solid white;
+}
+.card {
+  border-radius: var(--card_border-radius);
+}
+.card-image {
+  /* border-top-left-radius: var(--card-image_border-radius);
+  border-top-right-radius: var(--card-image_border-radius); */
+  border-radius: var(--card-image_border-radius) var(--card-image_border-radius)
+    0 0;
+}
+
+.material-symbols-rounded:not(.checked) {
+  color: #d3d3d3;
+  color: hsl(0, 0%, 80%);
+}
+.material-symbols-rounded.checked {
+  color: #0065fc;
+  color: hsl(216, 100%, 50%);
+}

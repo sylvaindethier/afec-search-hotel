@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hébergements à Marseille</title>
+
+    <!-- <link rel="stylesheet" href="css/__debug.css" /> -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts for Text  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Raleway", sans-serif;
+      }
+    </style>
+
+    <!-- Google Fonts for Icons w/ Material Symbols Rounded  -- variable font -->
+    <!-- !WARNING: 3.13MB to download -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      .material-symbols-rounded:not(.fill) {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+      }
+      .material-symbols-rounded.fill {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+      }
+    </style> -->
+
+    <!-- Google Fonts for Icons w/ Material Symbols Rounded -- static font -->
+    <!-- !PREFER: 300KB to download  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <style>
+      .material-symbols-rounded:not(.checked) {
+        color: lightgrey;
+      }
+    </style>
+
+    <!-- ///// #card Template ///// -->
+    <template id="card">
+      <figure
+        class="card"
+        data-location-name="[data-location-name]"
+        data-location-price="[data-location-price]"
+        data-location-rating="[data-location-rating]"
+      >
+        <img
+          class="card-image"
+          width="150"
+          height="80"
+          alt="image [data-location-name]"
+          src=""
+        />
+        <figcaption class="card--content">
+          <h3 class="card-title">[data-location-name]</h3>
+          <div class="card-description">
+            Nuit à partir de [data-location-price]
+          </div>
+          <div class="card-rating rating-1o5">
+            <span class="material-symbols-rounded checked fill"> star </span>
+            <span class="material-symbols-rounded"> star </span
+            ><span class="material-symbols-rounded"> star </span
+            ><span class="material-symbols-rounded"> star </span
+            ><span class="material-symbols-rounded"> star </span>
+          </div>
+        </figcaption>
+      </figure>
+    </template>
+    <!-- \\\\\ #card Template \\\\\ -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hébergements à Marseille</h1>
+
+      <div class="card-container">
+        <!-- ///// Card #1 ///// -->
+        <figure
+          id="card_1"
+          class="card"
+          data-location-name="Auberge la Cannebière"
+          data-location-price="25€"
+          data-location-rating="4o5"
+        >
+          <img
+            class="card-image"
+            width="150"
+            height="80"
+            alt="image Auberge la Cannebière"
+            src="img/la_cannebiere.jpg"
+          />
+          <figcaption class="card--content">
+            <h3 class="card-title">Auberge la Cannebière</h3>
+            <div class="card-description">Nuit à partir de 25€</div>
+            <div class="card-rating rating-4o5">
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded"> star </span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- ///// Card #2 ///// -->
+        <figure
+          id="card_2"
+          class="card"
+          data-location-name="Hôtel du Port"
+          data-location-price="52€"
+          data-location-rating="5o5"
+        >
+          <img
+            class="card-image"
+            width="150"
+            height="80"
+            alt="image Hôtel du Port"
+            src="img/hotel_du_port.jpg"
+          />
+          <figcaption class="card--content">
+            <h3 class="card-title">Hôtel du Port</h3>
+            <div class="card-description">Nuit à partir de 52€</div>
+            <div class="card-rating rating-5o5">
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- ///// Card #3 ///// -->
+        <figure
+          id="card_3"
+          class="card"
+          data-location-name="Hôtel les Mouettes"
+          data-location-price="76€"
+          data-location-rating="4o5"
+        >
+          <img
+            class="card-image"
+            width="150"
+            height="80"
+            alt="image Hôtel les Mouettes"
+            src="img/les_mouettes.jpg"
+          />
+          <figcaption class="card--content">
+            <h3 class="card-title">Hôtel les Mouettes</h3>
+            <div class="card-description">Nuit à partir de 76€</div>
+            <div class="card-rating rating-4o5">
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded"> star </span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- ///// Card #4 ///// -->
+        <figure
+          id="card_4"
+          class="card"
+          data-location-name="Auberge de la Mer"
+          data-location-price="46€"
+          data-location-rating="3o5"
+        >
+          <img
+            class="card-image"
+            width="150"
+            height="80"
+            alt="image Auberge de la Mer"
+            src="img/la_mer.jpg"
+          />
+          <figcaption class="card--content">
+            <h3 class="card-title">Auberge de la Mer</h3>
+            <div class="card-description">Nuit à partir de 46€</div>
+            <div class="card-rating rating-3o5">
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded"> star </span>
+              <span class="material-symbols-rounded"> star </span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- ///// Card #5 ///// -->
+        <figure
+          id="card_5"
+          class="card"
+          data-location-name="Hôtel le Panier"
+          data-location-price="23€"
+          data-location-rating="4o5"
+        >
+          <img
+            class="card-image"
+            width="150"
+            height="80"
+            alt="image Hôtel le Panier"
+            src="img/le_panier.jpg"
+          />
+          <figcaption class="card--content">
+            <h3 class="card-title">Hôtel le Panier</h3>
+            <div class="card-description">Nuit à partir de 23€</div>
+            <div class="card-rating rating-4o5">
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded"> star </span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- ///// Card #6 ///// -->
+        <figure
+          id="card_6"
+          class="card"
+          data-location-name="Hôtel chez Amina"
+          data-location-price="96€"
+          data-location-rating="5o5"
+        >
+          <img
+            class="card-image"
+            width="150"
+            height="80"
+            alt="image Hôtel chez Amina"
+            src="img/amina.jpg"
+          />
+          <figcaption class="card--content">
+            <h3 class="card-title">Hôtel chez Amina</h3>
+            <div class="card-description">Nuit à partir de 96€</div>
+            <div class="card-rating rating-4o5">
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+              <span class="material-symbols-rounded checked fill"> star </span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+
+      <h4 class="show-more">Afficher plus</h4>
+    </div>
+  </body>
+</html>
